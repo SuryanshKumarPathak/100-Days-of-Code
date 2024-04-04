@@ -1,0 +1,21 @@
+# RANDOMISATION INTRODUCTION
+
+import random
+
+#Generate random integer including 1 and 10 
+
+random_integer = random.randint(1,10)
+print(random_integer)
+
+#Generate random floating number including 0 but not 1.0
+
+random_float= random.random()
+print(random_float)
+
+#Head and tail Game 
+
+random_side =random.randint(0,1)
+if random_side==1:
+    print("Head")
+else:
+    print("Tail")
