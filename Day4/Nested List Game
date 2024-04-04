@@ -1,0 +1,31 @@
+row1= ["❓","❓","❓"]
+row2= ["❓","❓","❓"]
+row3= ["❓","❓","❓"]
+rows = [row1,row2,row3]
+
+print(f"{row1}\n{row2}\n{row3}")
+positions = input(f"Enter the row and column: ")
+horizontal = int(positions[0])
+vertical = int(positions[1])
+
+selected_row = rows[horizontal-1]
+selected_row[vertical-1] = "x"
+print(f"{row1}\n{row2}\n{row3}")
+
+i= 0 
+while i <9:
+    if i%2==0:
+        positions = input(f"Enter the row and column: ")
+        horizontal = int(positions[0])
+        vertical = int(positions[1])
+        selected_row = rows[horizontal-1]
+        selected_row[vertical-1] = "x"
+        print((f"{row1}\n{row2}\n{row3}"))
+    else:
+        positions = input(f"Enter the row and column: ")
+        horizontal = int(positions[0])
+        vertical = int(positions[1])
+        selected_row = rows[horizontal-1]
+        selected_row[vertical-1] = "o"
+        print(f"{row1}\n{row2}\n{row3}")
+    i+=1
