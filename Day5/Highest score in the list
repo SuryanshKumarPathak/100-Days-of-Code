@@ -1,0 +1,11 @@
+student_scores= input("Enter the list of the scores with space separated: ").split()
+for i in range(0,len(student_scores)):
+    student_scores[i]=int(student_scores[i])
+maximum_number=0
+for i in range(0,len(student_scores)):
+    if student_scores[i]>student_scores[i-1]:
+        maximum_number=student_scores[i]
+    else:
+        continue
+print(student_scores)
+print(maximum_number)
