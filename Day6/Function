@@ -1,0 +1,17 @@
+#Defining function 
+            # def my_function():
+            #     do this 
+            #     then do this 
+            #     finally do this 
+
+#Calling function
+#my_function()
+
+#Shortcut key to indent 
+# ctrl+]
+
+#while loop syntax
+# while something is true
+#       do this 
+#       then do this 
+#       finally do this 
