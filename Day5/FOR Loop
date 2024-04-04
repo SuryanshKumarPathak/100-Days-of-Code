@@ -1,0 +1,5 @@
+for loop in list (do something to eac item in the list)
+fruits = ['Apple','Peach','Pear']
+for i in fruits:
+    print(i)
+    print(i+'pie')
