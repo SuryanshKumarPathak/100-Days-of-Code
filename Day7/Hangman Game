@@ -1,0 +1,48 @@
+import random 
+alphabets= ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z']
+numbers_of_letters = random .randint(0,5)
+word= ""
+blanks=[]
+lives =0
+for i in range(0,numbers_of_letters+1):
+    word+=random.choice(alphabets)
+    blanks.append("_")
+    lives+=1
+print(f"Current word seleceted by the computer {word}")
+print(f"your blank list is here {blanks}")
+print(f"Number of the lives you got {lives}")
+
+# WORDS BLANKS AND LIVES CREATED SUCCESSFULLY
+
+
+
+#TO CHECK whether the user input 
+
+
+end_of_game=False
+
+while not end_of_game: 
+    guess= input("Enter any letter: ").upper()   #user enter
+    for letter in word:           #its just a check
+        if letter==guess: 
+            print("Right")          
+        else:
+            print('Wrong')
+            
+    for position in range(len(word)):
+        letter=word[position]        #to get the letter of each position
+        if letter==guess: 
+            blanks[position]=letter
+            print(blanks)
+        print(f"your current live is {lives}")
+    if guess not in word:
+        lives-=1
+        print(f"your current live is {lives}")
+        if lives==0:
+            end_of_game=True
+            print("you lose")
+    print(f"{' '.join(blanks)}")
+    
+    if "_" not in blanks:
+        end_of_game=True
+        print("You win")
