@@ -8,7 +8,7 @@ for i in range(0,numbers_of_letters+1):
     word+=random.choice(alphabets)
     blanks.append("_")
     lives+=1
-print(f"Current word seleceted by the computer {word}")
+# print(f"Current word seleceted by the computer {word}")
 print(f"your blank list is here {blanks}")
 print(f"Number of the lives you got {lives}")
 
@@ -34,15 +34,15 @@ while not end_of_game:
         if letter==guess: 
             blanks[position]=letter
             print(blanks)
-        print(f"your current live is {lives}")
+            print(f"your current live is {lives}")
     if guess not in word:
         lives-=1
         print(f"your current live is {lives}")
         if lives==0:
             end_of_game=True
-            print("you lose")
+            print(f"you lose   Word seleceted by the computer {word}")
     print(f"{' '.join(blanks)}")
     
     if "_" not in blanks:
         end_of_game=True
-        print("You win")
+        print(f"You win  Word seleceted by the computer {word}")
