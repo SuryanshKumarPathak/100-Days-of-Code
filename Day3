@@ -1,0 +1,211 @@
+# number = int(input("Enter your number: "))
+# if number%2==0:        
+#     print("Even")
+# else:
+#     print("Odd")
+
+
+
+# #Nested List
+    
+
+# height = int(input("Enter your height: "))
+# age = int(input("Enter your age : "))
+# if height>=120:
+#     if age< 12:
+#         print("Pay $5")
+#     elif 12<=age<=18:
+#         print("Pay $7")
+#     else:
+#         print("Pay $12")
+# else:
+#     print("Sorry , You can't ride.")
+
+# BMI Calculator
+
+# new_height = float(input("Enter your height: "))
+# new_weight = float(input("Enter your weight: "))
+# BMI = round(new_weight/new_height**2)
+# print(BMI)
+# if BMI<18.5:
+#     print("Underweight")
+# elif 18.5<=BMI<25:
+#     print("Normal Weight")
+# elif 25<=BMI<30:
+#     print("Over weight")
+# elif 30<=BMI<35:
+#     print("Obese")
+# else:
+#     print("Clinically obese")
+
+#leap year
+
+
+# year = int(input("Enter the year: "))
+
+# if year%4==0:
+#     if year%100==0:
+#         if year%400==0:
+#             print("Leap year")
+#         else:
+#             print("Not leap year")
+#     else:
+#         print("Leap year")
+# else:
+#     print("Not leap year")
+
+#multiple if
+
+
+
+# Height = float(input("Enter your height: "))
+# Age = int(input("Enter your age: "))
+# bill = 0
+# if Height>120:
+#     print("You can ride this rollercoaster")
+#     if Age<12:
+#         bill = 5
+#         print("Pay $5")
+#     elif 12<Age<18:
+#         bill = 7
+#         print("Pay $7")
+#     else:
+#         bill =12
+#         print("Pay $12")
+#     want= input("Do you want photos? Y or N: ")
+#     if want=="Y":
+#         bill+=3
+#     print(f"Your total bill is ${bill}")
+# else:
+#     print("You can't ride.")
+
+
+#Pizza order
+# print("Welcome to Python Pizza Deliveries!")
+# size = (input("What size pizza do you want? S, M, L"))
+# add_pepperoni = input("Do you want to add pepperoni? Y or N")
+# Extra_cheese = input("Do you want extra Cheese? Y or N ")
+# bill = 0 
+# if size =="S":
+#     bill+=15
+#     if add_pepperoni=="Y":
+#         bill+=2
+#         if Extra_cheese=="Y":
+#             bill+=1
+#         else:
+#             bill+=0
+#     elif add_pepperoni=="N":
+#         if Extra_cheese=="Y":
+#             bill+=1
+#         else:
+#             bill+=0
+#     else:
+#         ("Please select correct option")
+# elif size =="M":
+#     bill+=20
+#     if add_pepperoni=="Y":
+#         bill+=3
+#         if Extra_cheese=="Y":
+#             bill+=1
+#         else:
+#             bill+=0
+#     elif add_pepperoni=="N":
+#         if Extra_cheese=="Y":
+#             bill+=1
+#         else:
+#             bill+=0
+#     else:
+#         ("Please select correct option")
+# elif size =="L":
+#     bill+=25
+#     if add_pepperoni=="Y":
+#         bill+=3
+#         if Extra_cheese=="Y":
+#             bill+=1
+#         else:
+#             bill+=0
+#     elif add_pepperoni=="N":
+#         if Extra_cheese=="Y":
+#             bill+=1
+#         else:
+#             bill+=0
+#     else:
+#         ("Please select correct option")
+# else:
+#     print("Invalid pizza size")
+# print("Your final bill is ",bill)
+
+
+# Height = float(input("Enter your height: "))
+# Age = int(input("Enter your age: "))
+# bill = 0
+# if Height>120:
+#     print("You can ride this rollercoaster")
+#     if Age<12:
+#         bill = 5
+#         print("Pay $5")
+#     elif 12<Age<18:
+#         bill = 7
+#         print("Pay $7")
+#     elif Age>=45 and Age<=55:
+#         print("Everythimg is going to be ok . Have a free ride.")
+#     else:
+#         bill =12
+#         print("Pay $12")
+#     want= input("Do you want photos? Y or N: ")
+#     if want=="Y":
+#         bill+=3
+#     print(f"Your total bill is ${bill}")
+# else:
+#     print("You can't ride.")
+
+#Love Calculator
+
+# print("Welcome to Love calculator")
+# name1 = input("Enter first name: ")
+# name2  =input("Enter second name: ")
+
+# Name1 = name1.lower()
+# Name2 = name2.lower()
+
+# T = (Name1.count("t"))+(Name2.count("t"))
+# R = (Name1.count("r"))+(Name2.count("r"))
+# U = (Name1.count("u"))+(Name2.count("u"))
+# E = (Name1.count("e"))+(Name2.count("e"))
+# L = (Name1.count("l"))+(Name2.count("l"))
+# O = (Name1.count("o"))+(Name2.count("o"))
+# V= (Name1.count("v"))+(Name2.count("v"))
+
+# TRUE = str(T+R+U+E)
+# LOVE = str(L+O+V+E)
+
+# Love_score = TRUE+LOVE
+# print(f"Your love score is {Love_score}")
+# LS = int(Love_score)
+# if LS<10 or LS>90:
+#     print("You go together like coke and Mentos")
+# elif 40<LS<50:
+#     print("You are alright together")
+# else:
+#     print("Gaa*d Mrao")
+
+
+
+
+#TREASURE LAND
+# print('''Welcome to Treasure Island
+# Your mission is to find the right path''')
+
+# Stage1= input('''\nYou are at a cross road .Where do you want to go ? Type "left" or "right"''')
+# if Stage1=="left":
+#     stage2 = input('''\nYou come to a lake. There is a island in the middle of the lake. Type "wait" to wait for a boat. Type "swim" to swim across''')
+#     if stage2=="wait":
+#         stage3 = input("\nYou arrive at the island unharmed . There is is house with 3 doors. One red, one yellow and one blue. Which colour do you choose?")
+#         if stage3=='yellow':
+#             print("\nYou win!")
+#         else:
+#             print("\nGame Over")
+#     else:
+#             print("\nGame Over")
+# else:
+#             print("Game Over")
