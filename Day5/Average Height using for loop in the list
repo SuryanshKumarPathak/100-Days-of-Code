@@ -1,0 +1,10 @@
+student_heights= input("Enter your height with space separated: ").split()
+for i in range(0,len(student_heights)):
+    student_heights[i]=int(student_heights[i])
+sum=0
+print(student_heights)
+for i in student_heights:
+    sum+=i
+Average= round(sum/len(student_heights),2)
+print(f"Average of the given list of heights is {Average}")
+print(len(student_heights))
