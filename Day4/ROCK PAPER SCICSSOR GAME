@@ -1,0 +1,22 @@
+import random 
+while True:
+    user_input= int(input("Enter any number (1 for Rock, 2 for Paper , 3 for Scissor):"))
+    computer_input = random.randint(1,3)
+    game= {"Rock":1,"Paper":2,"Scissor":3}
+    keys=list(game.keys())
+    values=list(game.values())
+    user_index= values.index(user_input)
+    computer_index=values.index(computer_input)
+
+    print(f"Your choice is {keys[user_index]}")
+    print(f"Commputer choice is {keys[computer_index]} ")
+    if user_input==1 and computer_input==3:
+        print("You win")
+    elif user_input==2 and computer_input==1:
+        print("You win")
+    elif user_input==3 and computer_input==2:
+        print("You win")
+    elif user_input==computer_input:
+        print("Match draw")
+    else:
+        print("Computer win")
