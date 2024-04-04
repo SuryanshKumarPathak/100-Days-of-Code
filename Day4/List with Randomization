@@ -1,0 +1,11 @@
+#Rich Businessman Game
+
+import random
+Persons = input("Enter the name of persons playing this game(Everybody's name should be separated by the comma): ").split(", ")
+random_person = random.randint(0,len(Persons)-1) 
+print(Persons)
+print(f"Today's bill will be paid by {Persons[random_person]}")
+
+#Method 2 
+
+print(f"Today,s bill will be paid by {random.choice(Persons)}")
